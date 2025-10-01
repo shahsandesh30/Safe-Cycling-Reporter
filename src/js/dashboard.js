@@ -1,5 +1,3 @@
-import { getReports } from '../utils/storage.js';
-
 function median(nums) {
     if (!nums.length) return null;
     const a = [...nums].sort((x, y) => x - y);

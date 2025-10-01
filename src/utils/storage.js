@@ -14,5 +14,3 @@ function clearReports() {
     const key = 'scr_reports_v1';
     localStorage.removeItem(key);
 }
-
-export { saveReport, getReports, clearReports };
