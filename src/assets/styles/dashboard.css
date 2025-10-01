@@ -1,0 +1,128 @@
+/* Dashboard specific styles */
+:root {
+    --bg: #ffffff;
+    --card: #f8f9fa;
+    --muted: #6c757d;
+    --text: #212529;
+    --acc: #28a745;
+    --warn: #ffc107;
+    --danger: #dc3545;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    font-family: Inter, system-ui, Arial;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.kpi {
+    background: var(--card);
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    padding: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.kpi h3 {
+    margin: 0 0 6px;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+.kpi .val {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.list {
+    margin-top: 10px;
+    display: grid;
+    gap: 12px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px;
+    background: var(--card);
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.thumb {
+    width: 120px;
+    height: 90px;
+    background: #0b1020;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.sev {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 999px;
+}
+
+.sev.High {
+    background: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+}
+
+.sev.Medium {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.sev.Low {
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.meta {
+    color: #0d6efd;
+    font-size: 12px;
+}
+
+.report {
+    color: var(--text);
+}
+
+.empty {
+    border: 1px dashed #dee2e6;
+    color: var(--muted);
+}

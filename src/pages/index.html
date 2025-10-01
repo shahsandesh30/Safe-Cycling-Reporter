@@ -1,0 +1,61 @@
+<!-- filepath: safe-cycling-app/src/pages/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Safe-Cycling Reporter</title>
+    <link rel="stylesheet" href="../assets/styles/reporter.css" />
+</head>
+<body>
+    <div class="wrap">
+        <div class="topbar">
+            <div>
+                <h1>Safe-Cycling Reporter</h1>
+            </div>
+            <a class="btn" href="dashboard.html">Open Dashboard</a>
+        </div>
+
+        <div class="card">
+            <div class="grid">
+                <div>
+                    <label>1) Upload photo (pothole / debris / crack)</label>
+                    <input id="photo" type="file" accept="image/*" />
+                    <div class="preview" id="preview" hidden><img id="previewImg" alt="preview"/></div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label>2) Location</label>
+                        <input id="location" type="text" placeholder="e.g., 123 King St, Sydney NSW" />
+                    </div>
+                    <div>
+                        <label>3) Hazard type (optional)</label>
+                        <select id="type">
+                            <option value="">Auto-detect</option>
+                            <option>Pothole</option>
+                            <option>Debris</option>
+                            <option>Surface crack</option>
+                            <option>Drain grate hazard</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Notes (optional)</label>
+                    <textarea id="notes" rows="3" placeholder="Short note…"></textarea>
+                </div>
+
+                <div>
+                    <button id="submit">Submit Hazard</button>
+                    <span class="pill" id="status" style="margin-left:8px;"></span>
+                </div>
+
+                <div id="aiBox" class="result" hidden></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/reporter.js"></script>
+</body>
+</html>

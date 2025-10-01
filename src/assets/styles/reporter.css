@@ -1,0 +1,166 @@
+/* This file contains the CSS styles specific to the reporter page, defining the layout, colors, and typography. */
+
+:root {
+  --bg: #ffffff;
+  --card: #f8f9fa;
+  --muted: #6c757d;
+  --acc: #28a745;
+  --danger: #dc3545;
+  --warn: #ffc107;
+  --text: #212529;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: var(--bg);
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #dee2e6;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: var(--text);
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+p.sub {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+label {
+  display: block;
+  color: var(--text);
+  margin: 12px 0 6px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ced4da;
+  background: #ffffff;
+  color: var(--text);
+}
+
+input[type="file"] {
+  border: 1px dashed #ced4da;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  color: var(--muted);
+  background: #ffffff;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(90deg, #0d6efd, #28a745);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.row {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.preview {
+  margin-top: 12px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.preview img {
+  width: 100%;
+  display: block;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f0f2f5;
+  border: 1px solid #dee2e6;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.result {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: var(--text);
+}
+
+.sev-low {
+  border-left: 6px solid var(--acc);
+}
+
+.sev-mid {
+  border-left: 6px solid var(--warn);
+}
+
+.sev-high {
+  border-left: 6px solid var(--danger);
+}
+
+.foot {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+a.btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.btn:hover {
+  background: #f8f9fa;
+}

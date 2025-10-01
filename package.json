@@ -1,0 +1,23 @@
+{
+  "name": "safe-cycling-app",
+  "version": "1.0.0",
+  "description": "A web application for reporting and managing cyclist hazards.",
+  "main": "src/js/api.js",
+  "scripts": {
+    "start": "live-server src/pages",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "cycling",
+    "hazard",
+    "reporting",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
